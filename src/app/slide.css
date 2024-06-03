@@ -1,0 +1,63 @@
+/* slide.css */
+
+.slick-slider {
+  margin-bottom: 0px; 
+}
+
+.carousel-container {
+  width: 100%; /* Make the carousel container occupy the full width of the viewport */
+  height: 100vh; /* Make the carousel container occupy the full height of the viewport */
+  margin: 0 auto;
+  padding-top: 4cm;
+  padding-bottom: 0; /* Reduced padding from 4cm to 2cm */
+}
+
+.slick-slide {
+  margin: 2px 5px 2px;
+  height: 40px;
+  width: 20px; /* Set fixed width for each box */
+  padding: 1px;
+  transition: transform 0.5s ease; /* Adjust the transition duration and timing function */
+}
+
+.slick-prev, .slick-next {
+  font-size: 24px;
+  z-index: 1;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #ddd;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+.slide-content {
+  background-color: #161718;
+  @apply text-white p-3 rounded-lg shadow-md;
+
+  color: #fff;
+  width: 350px; /* Set fixed width for each box */
+  height: 80px; /* Set fixed height for each box */
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s, box-shadow 0.3s;
+  text-align: center;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+}

@@ -2,32 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    font-family: KaTeX_AMS;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/_next/static/media/KaTeX_AMS-Regular.a79f1c31.woff2) format("woff2"), url(/_next/static/media/KaTeX_AMS-Regular.1608a09b.woff) format("woff"), url(/_next/static/media/KaTeX_AMS-Regular.4aafdb68.ttf) format("truetype")
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  
+@font-face {
+    font-family: KaTeX_Caligraphic;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/_next/static/media/KaTeX_Caligraphic-Bold.ec17d132.woff2) format("woff2"), url(/_next/static/media/KaTeX_Caligraphic-Bold.b6770918.woff) format("woff"), url(/_next/static/media/KaTeX_Caligraphic-Bold.cce5b8ec.ttf) format("truetype")
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    font-family: 'Söhne', sans-serif;
+    background-color: black; /* Ensure the bg-black class or equivalent CSS is applied */
   }
-}

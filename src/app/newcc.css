@@ -1,0 +1,41 @@
+
+.carousel-container {
+  width: 100%;
+  height: 50%;
+  max-width: 200px; /* Adjusted size */
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 10%;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+/* Custom fade-out effect for vertical sliding */
+.slick-slide {
+  transition: transform 700ms ease-in-out, opacity 700ms ease-in-out;
+}
+
+.slick-current {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slick-active:not(.slick-current) {
+  opacity: 0;
+  transform: none; /* Adjust the value as needed */
+}
+
+.slick-active.slick-current {
+  opacity: 1;
+  transform: translateY(0);
+}
